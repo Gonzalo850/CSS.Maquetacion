@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/02eede59a8.js" crossorigin="anonymous"></script>
     <style>
         * {margin: 0;box-sizing: border-box;}
         /*por defecto, inicialmente móviles*/
@@ -31,8 +32,37 @@
         #contenedor-quienes-somos {display: flex;}
         #contenedor-quienes-somos img {width: 45%;}
             #contenedor-quienes-somos p {width: 45%;}
-    
+    #nuestros-servicios{
+        background-color: white;
     }
+    .servicio {
+       color: blue;
+       text-align: center;
+       border: 2px solid blue;
+       border-radius: 10px;
+       font-size: 4em;
+       padding: 10px;
+       margin-bottom: 10px;
+       width: 100%;
+    }
+    .servicio:hover {
+        opacity: 0.5;
+    }
+    #contenedor-nuestros-servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .servicio {
+        width: 45%;
+    }
+    .titulo {
+        text-align:center;
+
+    }
+    }
+    
 
                /*Para laptos y portatiles*/
         @media ( min-width:1000px ) {
@@ -41,6 +71,10 @@
                 font-size: 20px;
                 font-family: Arial, Helvetica, sans-serif;
             }
+            .servicio {
+            width: 30%;
+            font-size: 2em;
+        }
         }
     </style>
 </head>
@@ -59,8 +93,38 @@
 <img src="images2/gente taller.jpg" alt="">
 <p>Somos una empresa joven y dinámica Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus magnam voluptatum ullam accusamus error aliquid maxime, repellat, corrupti odio, hic recusandae praesentium! Architecto nulla qui aliquid explicabo! Assumenda, velit.</p>
 
-
 </div>
+<section id="nuestros-servicios">
+    <h1 class="titulo"> Nuestros servicios</h1>
+    <div id="nuestros-servicios">
+<div class="servicio">
+<i class="fa-solid fa-phone"></i>
+    <p>Atencion telefonica</p>
+</div>
+<div id="nuestros-servicios">
+<div class="servicio">
+<i class="fa-solid fa-car"></i>
+    <p>Vehiculo de sustitucion </p>
+    </div>
+    <div id="nuestros-servicios">
+<div class="servicio">
+<i class="fa-solid fa-circle-info"></i>
+    <p>Servicio informatico</p>
+    </div>
+    <div id="nuestros-servicios">
+<div class="servicio">
+<i class="fa-solid fa-truck"></i>
+    <p>Servicio adomicilio</p>
+    </div>
+    <div class="servicio">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+    <p>Servicio tecnico</p>
+    </div>
+    <div class="servicio">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+    <p>Servicio tecnico</p>
+    </div>
+</section>
 
     </section>
     <p>Media Queries</p>
